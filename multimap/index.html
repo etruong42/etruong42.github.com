@@ -1,15 +1,13 @@
 <html>
 <head>
-<script type="text/javascript" 
+<link rel="stylesheet" href="../assets/css/bootstrap.css">
 
-src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false" 
-
-></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
 <script type="text/javascript">
 function init() {
-	$("#butCalculate").click(calculateDistances);
+	$("#btnCalculate").click(calculateDistances);
 }
 
 function calculateDistances() {
@@ -56,27 +54,32 @@ window.onload = init;
 </head>
 
 <body>
-<table>
-	<tr>
-		<td>Origin: </td>
-		<td>
-			<input type="text" id="origin" value="boston, ma"/>
-			<button type="button" id="butCalculate">Calculate Distances</button>
-		</td>
-	</tr>
-	<tr>
-		<td>Destinations: </td>
-		<td>
-			<textarea cols="20" rows="10" id="destinations">
+<div class="container">
+	<div class="row">
+		<div class="span16">
+			<form class="form-stacked">
+				<fieldset>
+				<div class="clearfix">
+					<label for="origin">Origin</label>
+					<input class="xlarge" id="origin" name="origin" size="30" type="text">
+				</div>
+				<div class="clearfix">
+					<label for="destinations">Destinations</label>
+					<textarea class="span8" rows="10" id="destinations">
 holbrook, ma
 tampa, FL
-mountain view, CA
-			</textarea>
-		</td>
-	</tr>
-	<tr>
-		<td colspan="2" id="results"></td>
-	<tr>
-</table>
+mountain view, CA</textarea>
+				</div>
+				</fieldset>
+				<button type="button" class="btn" id="btnCalculate">Calculate Distances</button>
+				
+			</form>
+			
+		</div>
+	</div>
+	<div class="row">
+		<div class="span8" id="results"></td>
+	</div>
+</div>
 </body>
 </html>
