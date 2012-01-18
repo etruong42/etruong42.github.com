@@ -629,16 +629,21 @@ select,
 .uneditable-input {
   display: inline-block;
   width: 210px;
-  height: 18px;
+  height: 23px;
   padding: 4px;
   font-size: 13px;
-  line-height: 18px;
-  color: #808080;
+  line-height: 18px;  
+  color: #363636;
   border: 1px solid #ccc;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+
+.uneditable-input {
+  color: #808080;
+}
+
 select {
   padding: initial;
 }
