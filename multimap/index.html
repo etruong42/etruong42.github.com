@@ -1,0 +1,78 @@
+<html>
+<head>
+<script type="text/javascript" 
+
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false" 
+
+></script>
+
+<script type="text/javascript">
+function init() {
+	$("#butCalculate").click(calculateDistances);
+}
+
+function calculateDistances() {
+	var elOrigin = $("#origin");
+	var elDestinations = $("#destinations");
+	var service = new google.maps.DistanceMatrixService();
+	service.getDistanceMatrix(
+	{
+		origins: [elOrigin .val()],
+		destinations: elDestinations.val().split("\n"),
+		travelMode: google.maps.TravelMode.WALKING,
+		avoidHighways: false,
+		avoidTolls: false
+	}, displayDistances);
+}
+var glob;
+function displayDistances(response, status) {
+	var elResults = $("#results");
+	elResults.html("");
+	if (status === google.maps.DistanceMatrixStatus.OK) {
+		glob = response;
+		var origins = response.originAddresses;
+		var destinations = response.destinationAddresses;
+
+		for (var i = 0; i < origins.length; i++) {
+			var results = response.rows[i].elements;
+			
+			for (var j = 0; j < results.length; j++) {
+				var element = results[j];
+				var distance = element.distance.text;
+				var duration = element.duration.text;
+				var from = origins[i];
+				var to = destinations[j];
+				elResults.html(elResults.html() 
+					+ "<p><strong>" + from + "</strong> to <strong>" + to + "</strong> " + distance + "</p>");
+			}
+		}
+	}
+}
+
+window.onload = init;
+</script>
+
+</head>
+
+<body>
+<table>
+	<tr>
+		<td>Origin: </td>
+		<td>
+			<input type="text" id="origin" value="boston, ma"/>
+			<button type="button" id="butCalculate">Calculate Distances</button>
+		</td>
+	</tr>
+	<tr>
+		<td>Destinations: </td>
+		<td>
+			<textarea cols="20" rows="10" id="destinations">holbrook, ma</textarea>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" id="results"></td>
+	<tr>
+</table>
+</body>
+</html>
