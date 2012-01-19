@@ -1,6 +1,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="../assets/css/bootstrap.css">
+<link rel="stylesheet" href="../assets/css/global.css">
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
@@ -8,6 +9,12 @@
 <script type="text/javascript">
 function init() {
 	$("#btnCalculate").click(calculateDistances);
+	$(".displayhint").mouseenter(function() {
+		$(this).next().removeClass('hide');
+	});
+	$(".displayhint").mouseout(function() {
+		$(this).next().addClass('hide');
+	});
 }
 
 function calculateDistances() {
@@ -55,6 +62,9 @@ window.onload = init;
 
 <body>
 <div class="container">
+	<div class="page-header">
+		<h1>Multimap <small>Quickly compare route distances</small></h1>
+	</div>
 	<div class="row">
 		<div class="span16">
 			<form class="form-stacked">
@@ -62,15 +72,18 @@ window.onload = init;
 				<div class="clearfix">
 					<label for="origin">Origin</label>
 					<div class="input">
-						<input class="span8" id="origin" name="origin" size="30" type="text">
+						<input class="span6 displayhint" id="origin" name="origin" value="212 Elm St, Somerville, MA" type="text">
+						<span class="help-inline hide">Enter your starting address</span>
 					</div>
+					
 				</div>
 				<div class="clearfix">
 					<label for="destinations">Destinations</label>
-					<textarea class="span8" rows="10" id="destinations">
+					<textarea class="span6 displayhint" rows="10" id="destinations">
 holbrook, ma
 tampa, FL
 mountain view, CA</textarea>
+					<span class="help-inline hide">Enter your destinations</span>
 				</div>
 				</fieldset>
 				<button type="button" class="btn" id="btnCalculate">Calculate Distances</button>
