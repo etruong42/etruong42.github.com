@@ -23,7 +23,7 @@ function calculateDistances() {
 	var service = new google.maps.DistanceMatrixService();
 	service.getDistanceMatrix(
 	{
-		origins: [elOrigin .val()],
+		origins: [elOrigin.val()],
 		destinations: elDestinations.val().split("\n"),
 		travelMode: google.maps.TravelMode.WALKING,
 		avoidHighways: false,
