@@ -1,11 +1,45 @@
+<!DOCTYPE HTML>
 <html>
 <head>
 	<link rel="stylesheet" href="../assets/css/bootstrap.css">
 	<link rel="stylesheet" href="../assets/css/global.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
-	
+	<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-button.js" ></script>
+	<script type="text/javascript" src="./pcloremdata.js" ></script>
+	<title>Ethan's mish-mash | PC Lorem</title>
 	<script type="text/javascript">
-	
+		function Populate() {
+			$("#results").val(getParagraphs());
+		}
+		
+		function getParagraphs() {
+			var paragraphs = "";
+			var startTag = "";
+			var endTag = "";
+			var wrapTags = $("#wrapTag").val();
+			if($("#wrapCheckbox").is(':checked')){
+				startTag = wrapTags;
+				endTag = wrapTags[0] + "/" + wrapTags.substring(1);
+			}
+			$(PrideAndPrejudiceParagraphs).each(function(index, value){paragraphs += startTag + value + endTag + "\n\n";});
+			paragraphs = paragraphs.substring(0, paragraphs.length-2);
+			return paragraphs;
+		}
+		
+		function getRandomNumbers(num, lower, upper) {
+			var arr = []
+			while(arr.length < 8){
+				var randomnumber=Math.ceil(Math.random()*100)
+				var found=false;
+				for(var i=0;i<arr.length;i++){
+					if(arr[i]==randomnumber) {
+						found=true;
+						break;
+					}
+				}
+				if(!found) arr[arr.length] = randomnumber;
+			}
+		}
 	</script>
 
 </head>
@@ -13,6 +47,29 @@
 <div class="container">
 		<div class="page-header">
 			<h1>PC Lorem <small>Create politcally correct Lorem Ipsum text</small></h1>
+		</div>
+		<div class="row">
+			<div class="span6">
+				<h3>Works</h3>
+				<p>Select classic, (probably) politcally correct pieces of literature from which to generate filler text.</p>
+				<div class="btn-group" data-toggle="buttons-check">
+					<button class="btn active">Pride and Prejudice</button>
+				</div>
+				<br />				
+				<p><button class="btn span4" onclick="Populate()">Generate It!</button></p>
+				<div class="control-group">
+					<div class="controls>
+						<label class="control-label" for="wrapCheckbox">Wrap in 
+							<input class="span1" id="wrapTag" type="text" value="<p>">
+							tags
+						</label>						
+						<input type="checkbox" id="wrapCheckbox" checked="checked">
+					</div>
+				</div>
+			</div>
+			<div class="span10">
+				<textarea rows="16" class="span10" id="results"></textarea>
+			</div>
 		</div>
 </body>
 </html>
