@@ -63,7 +63,7 @@ this.paragraphs = [
 "Elinor saw, with concern, the excess of her sister's sensibility; but by Mrs. Dashwood it was valued and cherished. They encouraged each other now in the violence of their affliction. The agony of grief which overpowered them at first was voluntarily renewed, was sought for, was created again and again. They gave themselves up wholly to their sorrow, seeking increase of wretchedness in every reflection that could afford it, and resolved against ever admitting consolation in future. Elinor, too, was deeply afflicted; but still she could struggle, she could exert herself. She could consult with her brother, could receive her sister-in-law on her arrival, and treat her with proper attention; and could strive to rouse her mother to similar exertion, and encourage her to similar forbearance.",
 
 "Margaret, the other sister, was a good-humored, well-disposed girl; but as she had already imbibed a good deal of Marianne's romance, without having much of her sense, she did not, at thirteen, bid fair to equal her sisters at a more advanced period of life."
-]
+],
 [
 "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way--in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only.",
 

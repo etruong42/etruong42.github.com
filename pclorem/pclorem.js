@@ -18,8 +18,10 @@ if( typeof PCLOREM === "undefined" || !PCLOREM ) { var PCLOREM = {}; }
 		
 		for(var x = 0; x < numParagraphs; x++) {
 			var selectedIndices = this.getSelectedIndices();
-			var selectionIndex = this.rand(0, selectedIndices.length-1);
-			var paragraphIndex = this.rand(0, this.paragraphs[selectionIndex].length-1);
+			var selectionIndex = 
+				this.rand(0, selectedIndices.length-1);
+			var paragraphIndex = 
+				this.rand(0, this.paragraphs[selectionIndex].length-1);
 			PCLOREM.addParagraphToResults(startTag + this.paragraphs[selectionIndex][paragraphIndex] + endTag);
 		}
 		
