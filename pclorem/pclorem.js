@@ -5,7 +5,7 @@ if( typeof PCLOREM === "undefined" || !PCLOREM ) { var PCLOREM = {}; }
 		var startTag = "";
 		var endTag = "";
 		var wrapTags = $("#wrapTag").val();
-		if($("#wrapCheckbox").is(':checked')){
+		if($("#wrapCheckbox").is(':checked') && wrapTags){
 			startTag = wrapTags;
 			endTag = wrapTags[0] + "/" + wrapTags.substring(1);
 		}
@@ -102,7 +102,8 @@ if( typeof PCLOREM === "undefined" || !PCLOREM ) { var PCLOREM = {}; }
 	this.initialize = function() {
 		$(this.titles).each(function(index, value) {
 			$("#bookselections").append(PCLOREM.createAndGetCheckboxForTitle(value))
-		});		
+		});	
+		this.populate();
 	}
 	
 	this.createAndGetCheckboxForTitle = function(booktitle) {
