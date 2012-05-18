@@ -106,7 +106,7 @@ if( typeof PCLOREM === "undefined" || !PCLOREM ) { var PCLOREM = {}; }
 	}
 	
 	this.createAndGetCheckboxForTitle = function(booktitle) {
-		return "<button class=\"btn active\">"+booktitle+"</button>"
+		return "<button class=\"btn active bookbutton\">"+booktitle+"</button>"
 	}
 }).apply(PCLOREM);
 

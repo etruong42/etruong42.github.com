@@ -15,22 +15,22 @@
 		<h1>PC Lorem <small>Create politically correct Lorem Ipsum text</small></h1>
 	</div>
 		<div class="row">
-			<div class="span6">
+			<div class="span3">
 				<h3>Works</h3>
 				<p>Select classic, (probably) politcally correct pieces of literature from which to generate filler text.</p>
-				<div class="btn-group" data-toggle="buttons-check" id="bookselections">
+				<div class="btn-group-vert" data-toggle="buttons-check" id="bookselections">
 					
 				</div>
 				<br />				
-				<p><button class="btn span4" onclick="PCLOREM.populate()">Generate It!</button></p>
+				<p><button class="btn bookbutton" onclick="PCLOREM.populate()">Generate It!</button></p>
 				
 				<form class="well">
 					<div>
-						<label for="wrapCheckbox">
+						<label class="inline" for="wrapCheckbox">
 							Wrap in 
 						</label>
 						<input class="span1 generator" id="wrapTag" type="text" value="<p>" style="text-align: center"> 
-						<label for="wrapCheckbox">
+						<label class="inline" for="wrapCheckbox">
 							tags
 						</label>
 						&nbsp;
@@ -42,8 +42,8 @@
 				</form>
 			</div>
 		
-			<div class="span10">
-				<textarea rows="16" class="span10" id="results"></textarea>
+			<div class="span8">
+				<textarea rows="21" class="span10" id="results"></textarea>
 			</div>
 		</div>
 </div>
