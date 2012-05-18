@@ -19,15 +19,17 @@ if( typeof PCLOREM === "undefined" || !PCLOREM ) { var PCLOREM = {}; }
 		for(var x = 0; x < numParagraphs; x++) {
 			var selectedIndices = this.getSelectedIndices();
 			var selectionIndex = 
-				this.rand(0, selectedIndices.length-1);
+				selectedIndices[this.rand(0, selectedIndices.length-1)];
 			var paragraphIndex = 
 				this.rand(0, this.paragraphs[selectionIndex].length-1);
+			console.log("paragraph from: " + this.titles[selectionIndex]);
 			PCLOREM.addParagraphToResults(startTag + this.paragraphs[selectionIndex][paragraphIndex] + endTag);
 		}
 		
 	}
 	
 	this.rand = function(lower, upper) {
+		if(lower === upper) return lower;
 		return Math.floor(Math.random()*(upper-lower+1)) + lower;
 	}
 	
@@ -110,4 +112,10 @@ if( typeof PCLOREM === "undefined" || !PCLOREM ) { var PCLOREM = {}; }
 
  $(document).ready(function () {
 	PCLOREM.initialize();
- });
+	
+	$(".generator").keypress(function(event) {
+		if ( event.which == 13 ) {
+			PCLOREM.populate();
+		}
+	});
+});
