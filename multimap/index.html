@@ -5,70 +5,10 @@
 	<link rel="stylesheet" href="../assets/css/global.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
 	<script type="text/javascript" src="../assets/js/table.js" ></script>
+	<script type="text/javascript" src="./multimap.js" ></script>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	
 	<script type="text/javascript">
-	function init() {
-		$("#btnCalculate").click(calculateDistances);
-		$(".displayhint").mouseenter(function() {
-			$(this).next().removeClass('hide');
-		});
-		$(".displayhint").mouseout(function() {
-			$(this).next().addClass('hide');
-		});
-	}
-	
-	function calculateDistances() {
-		var elOrigin = $("#origin");
-		var elDestinations = $("#destinations");
-		var service = new google.maps.DistanceMatrixService();
-		service.getDistanceMatrix(
-		{
-			origins: [elOrigin.val()],
-			destinations: elDestinations.val().split("\n"),
-			travelMode: google.maps.TravelMode.WALKING,
-			avoidHighways: false,
-			avoidTolls: false
-		}, displayDistances);
-	}
-	var glob;
-	var DEST_HEADER = "Destination";
-	var DIST_HEADER = "Distance";
-	var resultsTable;
-	function getNewResultsTable(rows) {
-		return new Table([DEST_HEADER, DIST_HEADER], rows);
-	}
-	
-	function displayDistances(response, status) {
-		var rows = new Array();
-		$("#results").html("");
-		if (status === google.maps.DistanceMatrixStatus.OK) {
-			glob = response;
-			var origins = response.originAddresses;
-			var destinations = response.destinationAddresses;
-			
-			for (var i = 0; i < origins.length; i++) {
-				var results = response.rows[i].elements;
-				
-				for (var j = 0; j < results.length; j++) {
-					var element = results[j];
-					var distance = element.distance.value;
-					var duration = element.duration.text;
-					var from = origins[i];
-					var to = destinations[j];
-					rows[j] = new Array();
-					rows[j][0] = to;
-					rows[j][1] = distance;
-				}
-			}
-		}
-		resultsTable = getNewResultsTable(rows);
-		resultsTable.sortRows(1);
-		var resultsDiv = document.getElementById("results");
-		resultsDiv.appendChild(resultsTable.getTableElement());
-	}
-	
-	window.onload = init;
 	</script>
 
 </head>
@@ -79,23 +19,19 @@
 			<h1>Multimap <small>Quickly compare route distances</small></h1>
 		</div>
 		<div class="row">
-			<div class="span16">
+			<div class="span12">
 				<form class="form-stacked">
 					<fieldset>
 					<div class="clearfix">
 						<label for="origin">Origin</label>
 						<div class="input">
-							<input class="span6 displayhint" id="origin" name="origin" value="212 Elm St, Somerville, MA" type="text">
-							<span class="help-inline hide">Enter your starting address</span>
+							<input class="span12" id="origin" name="origin" placeholder="Enter your starting address" type="text">
 						</div>
 						
 					</div>
 					<div class="clearfix">
 						<label for="destinations">Destinations</label>
-						<textarea class="span6 displayhint" rows="10" id="destinations">
-White House
-Mount Rushmore
-Monticello</textarea>
+						<textarea class="span12" rows="10" id="destinations" placeholder="Enter your destinations; seperate them with linebreaks by pressing enter"></textarea>
 						<span class="help-inline hide">Enter your destinations</span>
 					</div>
 					</fieldset>
@@ -106,7 +42,7 @@ Monticello</textarea>
 			</div>
 		</div>
 		<div class="row">
-			<div class="span16" id="results">
+			<div class="span12" id="results">
 				
 			</div>
 		</div>

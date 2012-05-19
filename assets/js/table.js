@@ -16,6 +16,7 @@ function Table(headers, rows) {
 			table.appendChild(currentRow);
 			$(this).each(function() {
 				var currentCell = document.createElement("td");
+				currentCell.classList.add("span10");
 				currentCell.appendChild(document.createTextNode($(this)[0]));
 				currentRow.appendChild(currentCell);
 			});
