@@ -6,16 +6,14 @@
 	<link rel="stylesheet" href="../assets/css/global.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
 	<script type="text/javascript" src="../assets/js/table.js" ></script>
-	<script type="text/javascript" src="./multimap.js" ></script>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-	
-	<script type="text/javascript">
-	</script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+	<script type="text/javascript" src="./multimap.js" ></script>
 
 </head>
 
 <body>
-	<div class="navbar">
+	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
 				<a class="brand" href="/">Ethan's mish-mash</a>
@@ -34,6 +32,7 @@
 						<label for="origin">Origin</label>
 						<div class="input">
 							<input class="span12" id="origin" name="origin" placeholder="Enter your starting address" type="text">
+							<p class="help-block" style="float:right"><img src="../assets/img/powered-by-google-on-white.png" /></p>
 						</div>
 						
 					</div>

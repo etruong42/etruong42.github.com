@@ -1,6 +1,7 @@
 if( typeof MULTIMAP === "undefined" || !MULTIMAP) { var MULTIMAP = {};}
 
 (function() {
+	
 	this.initialize = function() {
 		$("#btnCalculate").click(MULTIMAP.calculateDistances);
 		$(".displayhint").mouseenter(function() {
@@ -9,6 +10,13 @@ if( typeof MULTIMAP === "undefined" || !MULTIMAP) { var MULTIMAP = {};}
 		$(".displayhint").mouseout(function() {
 			$(this).next().addClass('hide');
 		});
+		
+		var originautocomplete = new google.maps.places.Autocomplete(this.getTxtOrigin()[0]);
+		originautocomplete.bindTo('', $("#origin")[0]);
+	}
+	
+	this.getTxtOrigin = function() {
+		return $("#origin");
 	}
 	
 	this.calculateDistances = function() {
@@ -64,4 +72,7 @@ if( typeof MULTIMAP === "undefined" || !MULTIMAP) { var MULTIMAP = {};}
 	
  $(document).ready(function () {
 	MULTIMAP.initialize();
+	MULTIMAP.getTxtOrigin().click(function() {
+		return false;
+	})
 });
