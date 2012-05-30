@@ -12,11 +12,30 @@ if( typeof MULTIMAP === "undefined" || !MULTIMAP) { var MULTIMAP = {};}
 		});
 		
 		var originautocomplete = new google.maps.places.Autocomplete(this.getTxtOrigin()[0]);
-		originautocomplete.bindTo('', $("#origin")[0]);
+		var destination = new google.maps.places.Autocomplete(this.getTxtSingleDestination()[0]);
 	}
 	
 	this.getTxtOrigin = function() {
 		return $("#origin");
+	}
+	
+	this.getTxtSingleDestination = function() {
+		return $("#singledestination");
+	}
+	
+	this.getTxtDestinations = function() {
+		return $("#destinations");
+	}
+	
+	this.addDestination = function(destination) {
+		var curval = this.getTxtDestinations().val();
+		
+		if(!curval) {
+			this.getTxtDestinations().val(destination)
+		}
+		else {
+			this.getTxtDestinations().val(curval + "\n" + destination)
+		}
 	}
 	
 	this.calculateDistances = function() {
@@ -72,7 +91,15 @@ if( typeof MULTIMAP === "undefined" || !MULTIMAP) { var MULTIMAP = {};}
 	
  $(document).ready(function () {
 	MULTIMAP.initialize();
-	MULTIMAP.getTxtOrigin().click(function() {
-		return false;
-	})
+	
+	MULTIMAP.getTxtSingleDestination().keypress(function(event) {
+		if ( event.which == 13 ) {
+			var dest = MULTIMAP.getTxtSingleDestination().val();
+			if(dest) {
+				MULTIMAP.addDestination(dest);
+			}
+			MULTIMAP.getTxtSingleDestination().val("abc");
+			return false;
+		}
+	});
 });

@@ -1,11 +1,12 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Multimap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../assets/css/bootstrap.css">
 	<link rel="stylesheet" href="../assets/css/bootstrap-responsive.css">
 	<link rel="stylesheet" href="../assets/css/global.css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js" ></script>
 	<script type="text/javascript" src="../assets/js/table.js" ></script>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
@@ -14,7 +15,7 @@
 </head>
 
 <body>
-	<div class="navbar navbar-fixed-top">
+	<div class="navbar">
 		<div class="navbar-inner">
 			<div class="container">
 				<a class="brand" href="/">Ethan's mish-mash</a>
@@ -39,6 +40,8 @@
 					</div>
 					<div class="clearfix">
 						<label for="destinations">Destinations</label>
+						<input class="span12" id="singledestination" name="origin" placeholder="Enter destinations one by one here and press enter" type="text">
+						<p class="help-block" style="float:right"><img src="../assets/img/powered-by-google-on-white.png" /></p>
 						<textarea class="span12" rows="10" id="destinations" placeholder="Enter your destinations; seperate them with linebreaks by pressing enter"></textarea>
 						<span class="help-inline hide">Enter your destinations</span>
 					</div>
