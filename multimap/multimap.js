@@ -98,7 +98,7 @@ if( typeof MULTIMAP === "undefined" || !MULTIMAP) { var MULTIMAP = {};}
 			if(dest) {
 				MULTIMAP.addDestination(dest);
 			}
-			MULTIMAP.getTxtSingleDestination().val("abc");
+			MULTIMAP.getTxtSingleDestination().val("");
 			return false;
 		}
 	});
