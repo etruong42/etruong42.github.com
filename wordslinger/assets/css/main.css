@@ -1,0 +1,126 @@
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+
+.tile {
+	width: 35px;
+	height: 35px;
+	border: solid gray thin;
+	position: relative;
+	display: inline-block;
+	font-size: 18px;
+	background: rgb(166,123,53);
+	background: rgba(166,123,53, 0.6);
+}
+
+.tileSlot {
+	width: 35px;
+	height: 35px;
+	border: solid gray thin;
+	position: relative;
+	display: inline-block;
+	font-size: 18px;
+}
+
+.TL {
+	background-color: #004CFF;
+}
+
+.DL {
+	background-color: #7AA2FF;
+}
+
+.DW {
+	background-color: #F7656D;
+}
+
+.TW {
+	background-color: #E3000B;
+}
+
+.handSlot {
+	width: 35px;
+	height: 35px;
+	border: solid gray thin;
+	position: relative;
+	display: inline-block;
+	font-size: 18px;
+}
+
+.tile-letter {
+	color: #111;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	left: 40%;
+	top: 50%;
+	margin-left: -5px;
+	margin-top: -11px;
+}
+
+.tile-points {
+	font-size: 0.6em;
+	position: absolute;
+	bottom: 0;
+	right: 1;
+}
+
+.points-space {
+	float:right;
+	height: 80%;
+}
+
+.hand {
+	border-color: #4d3919;
+	width: 265px;
+	height: 39px;
+	margin: 5px;
+	background: #6b4f22;
+	position:absolute;
+}
+
+.players{
+	width: 320px;
+}
+
+.handhelp {
+}
+
+.playerPanel{
+	height: 50px;
+}
+
+.selected {
+	border: solid red thin;
+}
+.active {
+	border: solid blue thin;
+}
+
+.showHideHand {
+	width: 46px;
+	position: relative;
+	left: 300px;
+	top: 15px;
+}
+
+.handscore {
+	position: relative;
+	left: 320px;
+	top: 18px;
+}
+
+.movescore {
+	position: relative;
+	left: 340px;
+	top: 18px;
+}
+
+input.go {
+	float:left;
+}
+
+.board{
+	
+}
