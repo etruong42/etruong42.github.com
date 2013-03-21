@@ -1,0 +1,44 @@
+body {
+	background: #ddd;
+}
+
+div.content {
+	width: auto;
+	margin-left: 36px;
+	margin-right: 6px;
+	font-size: 18px;
+	line-height: 32px;
+}
+
+div.body {
+	margin-top: 42px;
+}
+
+.post h1 {
+	margin-bottom: 16px;
+}
+
+.date {
+	font-size: 0.8em;
+	line-height: 16px;
+}
+
+.sidebar-nav {
+	margin-bottom: 36px;
+}
+
+@media (max-width: 767px) {
+	.sidebar-nav {
+		margin-left: 36px;
+	}
+}
+
+article.post {
+	margin-bottom: 24px;
+}
+
+div.content p {
+	font-size: 100%;
+	line-height: 32px;
+	margin-bottom: 24px;
+}

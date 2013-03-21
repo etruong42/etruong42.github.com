@@ -1,23 +1,12 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<title>Ethan's mish-mash</title>
-	<link rel="stylesheet" href="assets/css/bootstrap.css">
-</head>
-<body>
-<div class="container-fluid">
-	<div class="page-header">
-		<h1>Ethan's mish-mash <small>by Ethan</small></h1>
-	</div>
-	<div class="row">
-		<a href="multimap">Multimap</a> - a tool to quickly, geographically compare destinations
-	</div>
-	<div class="row">
-		<a href="pclorem">PCLorem</a> - a politically correct Lorem Ipsum generator
-	</div>
-	<div class="row">
-		<a href="wordslinger">Wordslinger</a> - v0.0.1 - a buggy clone of a very familiar word game
-	</div>
-</div>
-</body>
-</html>
+---
+layout: default
+---
+{% for post in site.posts %}
+<article class="post">
+	<header>
+		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		<span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
+		<p>{{post.description}}</p>
+	</header>
+</article>
+{% endfor %}
