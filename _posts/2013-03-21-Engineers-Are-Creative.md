@@ -16,4 +16,11 @@ Then there is erroneous divide that Hoffman places between "systems thinking" an
 
 While I agree that some people will thrive more in the humanities more than in the sciences, scientists can [see the world differently](http://abstrusegoose.com/275), enabled by their abilities in the sciences. When the ability to think creatively <em>and</em> logically combine, that ability can [push the boundaries of mankind](http://news.sciencemag.org/sciencenow/2013/03/physicists-discover-a-whopping.html).
 
+<img src="/assets/img/all_i_see_are_equations.png" />
+
+<p>
+<small>
+	Source at <a href="http://abstrusegoose.com/275">Abstruse Goose</a>
+</small>
+</p>
 Hoffman describes "systems thinking" as "logical, analytical, objective", but the notion that the ability to "systems think" disables - or even impedes - the ability to creatively think is dumbfounding.

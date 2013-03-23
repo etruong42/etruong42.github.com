@@ -128,7 +128,7 @@ namespace Sitecore.Shell.Applications.ContentManager.Commands
 
 The switch statement at line 36 lists all the field types which the spell checker will check. We can modify it to include or exclude whatever field type we want. In this example, I am including the another case for the single-line text field type:
 
-{% highlight csharp %}
+{% highlight csharp linenos %}
 using Sitecore;
 using Sitecore.Data.Items;
 using Sitecore.Diagnostics;

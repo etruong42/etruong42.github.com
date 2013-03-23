@@ -1,5 +1,9 @@
 body {
-	background: #ddd;
+	background: #efefef;
+}
+
+.sidebar-nav small {
+	color: #636363;
 }
 
 div.content {
@@ -23,21 +27,33 @@ div.body {
 }
 
 .sidebar-nav {
-	margin-bottom: 36px;
+	margin-top: -6px;
+	margin-bottom: 24px;
+	float: right;
 }
 
 @media (max-width: 767px) {
-	.sidebar-nav {
+	div.content {
 		margin-left: 36px;
+	}
+
+	.sidebar-nav {
+		margin-left: 20px;
+		float: none;
+	}
+
+	.sidebar-nav .about {
+		display: none;
 	}
 }
 
 article.post {
 	margin-bottom: 24px;
+	max-width: 786px;
 }
 
 div.content p {
 	font-size: 100%;
 	line-height: 32px;
-	margin-bottom: 24px;
+	margin: 12px 0 12px 0;
 }

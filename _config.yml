@@ -2,8 +2,9 @@ safe:        true
 auto:        true
 server:      true
 baseurl:     /
+pygments: true
 
-permalink: /:year/:month/:day/:title
+permalink: /:title
 
 ## Variables
 title : etruong42
