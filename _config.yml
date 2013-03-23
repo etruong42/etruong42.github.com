@@ -1,21 +1,2 @@
-safe:        true
-auto:        true
-server:      true
-baseurl:     /
+markdown: rdiscount
 pygments: true
-
-permalink: /:title
-
-## Variables
-title : etruong42
-description : Ethan's musings
-url : http://etruong42.github.com
-tagline : a mish mash
-author :
-  name : etruong42
-  email : etruong42@gmail.com
-  github : etruong42
-  twitter : etruong42
-  feedburner : etruong42
-  
-production_url : http://etruong42.github.com
