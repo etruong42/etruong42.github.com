@@ -6,6 +6,10 @@ body {
 	color: #636363;
 }
 
+div.content .summary {
+	margin-top: 0;
+}
+
 div.content {
 	width: auto;
 	margin-right: 6px;

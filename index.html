@@ -6,7 +6,7 @@ layout: default
 	<header>
 		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 		<span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
-		<p>{{post.description}}</p>
+		<p class="summary">{{post.description}}</p>
 	</header>
 </article>
 {% endfor %}
