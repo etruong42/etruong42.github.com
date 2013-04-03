@@ -44,7 +44,7 @@ The previous JavaScript method of declaring a namespace also utilizes type coerc
 var SOMETHING = SOMETHING || {};
 {% endhighlight %}
 
-<strong>var SOMETHING</strong> declares a variable named <strong>SOMETHING</strong>. we can see the right side of the equal sign, it coerces SOMETHING into a boolean type, and if that coerced boolean type is equal to true, the value of SOMETHING will be assigned to SOMETHING, meaning it will remain the same. JavaScript developers often call a value that can be coerced to true "truth-y", and values that can be coerced to false are sometimes called "false-y". 
+<strong>var SOMETHING</strong> declares a variable named <strong>SOMETHING</strong>. We can see the right side of the equal sign, it coerces SOMETHING into a boolean type, and if that coerced boolean type is equal to true, the value of SOMETHING will be assigned to SOMETHING, meaning it will remain the same. JavaScript developers often call a value that can be coerced to true "truth-y", and values that can be coerced to false are sometimes called "false-y". 
 
 So if a value at the left side of a || operator is truth-y, it will [short-circuit the evaluation](http://en.wikipedia.org/wiki/Short-circuit_evaluation), so if SOMETHING is defined (that is, truth-y), (SOMETHING || {}) will return SOMETHING. Otherwise, (SOMETHING || {}) will return {}, that is, an empty JavaScript object to which we can start assigning functions and other properties.
 
