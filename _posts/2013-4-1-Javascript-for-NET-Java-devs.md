@@ -32,7 +32,7 @@ var SOMETHING = function() { /*...*/ }
 if(SOMETHING) { /* code will execute */}
 {% endhighlight %}
 
-JavaScript does not return type errors, either at compile time or runtime. When a JavaScript application tries to treat a variable as a conditional, even if that variable is not a conditional, JavaScript will <em>coerce</em> the variable into a conditional. We can see that we declared the above variable SOMETHING as a function. The application as written above will execute the code within the if-block because a function coerced into a boolean will have the value of true. We can see type coercion at play again when the above below coerces the 1 into a string type.
+JavaScript does not return type errors, either at compile time or runtime. When a JavaScript application tries to treat a variable as a conditional, even if that variable is not a conditional, JavaScript will <em>coerce</em> the variable into a conditional. We can see that we declared the above variable SOMETHING as a function. The application as written above will execute the code within the if-block because a function coerced into a boolean will have the value of true. We can see type coercion at play again when the below coerces the 1 into a string type.
 
 {% highlight javascript+django %}
 console.log(1 + " apple"); //prints out "1 apple" to the console
