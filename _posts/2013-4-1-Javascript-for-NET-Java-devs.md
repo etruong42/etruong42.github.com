@@ -4,7 +4,7 @@ title: Reading JavaScript for Java or C# Developers
 description: A primer to help developers with a Java or C# background read JavaScript
 ---
 
-Having bitten the bullet and diving headlong into JavaScript after a long history of working diligently in Java and C#, here are some things I would like to share before I forget how confusing JavaScript can be. This blog post is geared towards people programming background in object oriented design in languages like Java or C#. I hope this post can help those who want to read JavaScript.
+Having bitten the bullet and diving headlong into JavaScript after a long history of working diligently in Java and C#, here are some things I would like to share before I forget how confusing JavaScript can be. This blog post is geared towards people with a programming background in object oriented design in languages like Java or C#. I hope this post can help those who want to read JavaScript.
 
 JavaScript is extremely deceiving with its C-like syntax, but it is a dynamic, loosely typed, functional, object-oriented language with type coercion and prototypal inheritance, so be prepared for something very not-C-like except for the syntax.
 
