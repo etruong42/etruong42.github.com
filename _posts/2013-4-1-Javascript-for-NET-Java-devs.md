@@ -10,16 +10,16 @@ JavaScript is extremely deceiving with its C-like syntax, but it is a dynamic, l
 
 <h3><em>Declaring a namespace</em> or <em>weird line at the start of JavaScript file</em></h3>
 {% highlight javascript+django %}
-var SOMETHING = SOMETHING || {};
+var MY_NAMESPACE = MY_NAMESPACE || {};
 {% endhighlight %}
 
-This is a typical way of declaring a namespace. The variable <strong>SOMETHING</strong> will remain the same if it is already defined, and if it is not already defined, it will be defined as an empty JavaScript object. The purpose of this of this line is very similiar to <em>ifndef</em> in C. We will go into greater depth about how the || operator works when we discuss type coercion. 
+This is a typical way of declaring a namespace. The variable <strong>MY_NAMESPACE</strong> will remain the same if it is already defined, and if it is not already defined, it will be defined as an empty JavaScript object. The purpose of this of this line is very similiar to <em>ifndef</em> in C. We will go into greater depth about how the || operator works when we discuss type coercion. 
 
-You will probably see the code go on to define properties and functions for SOMETHING, which is technically a JavaScript object, but we are using it like a namespace for those properties and functions.
+You will probably see the code go on to define properties and functions for MY_NAMESPACE, which is technically a JavaScript object, but we are using it like a namespace for those properties and functions.
 
 {% highlight javascript+django %}
-SOMETHING.MAX_NUM_WIDGETS = 7;
-SOMETHING.tellACoolStory = function() { /*...*/ };
+MY_NAMESPACE.MAX_NUM_WIDGETS = 7;
+MY_NAMESPACE.tellACoolStory = function() { /*...*/ };
 //etc
 {% endhighlight %}
 
@@ -28,11 +28,11 @@ The purpose of declaring a namepsace is to avoid name collisions. If you do not 
 <h3><em>Type coercion</em> or <em>treating something that is not a conditional as a conditional</em></h3>
 
 {% highlight javascript+django %}
-var SOMETHING = function() { /*...*/ }
-if(SOMETHING) { /* code will execute */}
+var myFunction = function() { /*...*/ }
+if(myFunction) { /* code will execute */}
 {% endhighlight %}
 
-JavaScript does not return type errors, either at compile time or runtime. When a JavaScript application tries to treat a variable as a conditional, even if that variable is not a conditional, JavaScript will <em>coerce</em> the variable into a conditional. We can see that we declared the above variable SOMETHING as a function. The application as written above will execute the code within the if-block because a function coerced into a boolean will have the value of true. We can see type coercion at play again when the below coerces the 1 into a string type.
+JavaScript does not return type errors, either at compile time or runtime. When a JavaScript application tries to treat a variable as a conditional, even if that variable is not a conditional, JavaScript will <em>coerce</em> the variable into a conditional. We can see that we declared the above variable myFunction as a function. The application as written above will execute the code within the if-block because a function coerced into a boolean will have the value of true. We can see type coercion at play again when the below coerces the 1 into a string type.
 
 {% highlight javascript+django %}
 console.log(1 + " apple"); //prints out "1 apple" to the console
@@ -41,12 +41,12 @@ console.log(1 + " apple"); //prints out "1 apple" to the console
 The previous JavaScript method of declaring a namespace also utilizes type coercion. 
 
 {% highlight javascript+django %}
-var SOMETHING = SOMETHING || {};
+var MY_NAMESPACE = MY_NAMESPACE || {};
 {% endhighlight %}
 
-<strong>var SOMETHING</strong> declares a variable named <strong>SOMETHING</strong>. We can see the right side of the equal sign, it coerces SOMETHING into a boolean type, and if that coerced boolean type is equal to true, the value of SOMETHING will be assigned to SOMETHING, meaning it will remain the same. JavaScript developers often call a value that can be coerced to true "truth-y", and values that can be coerced to false are sometimes called "false-y". 
+<strong>var MY_NAMESPACE</strong> declares a variable named <strong>MY_NAMESPACE</strong>. We can see the right side of the equal sign, it coerces MY_NAMESPACE into a boolean type, and if that coerced boolean type is equal to true, the value of MY_NAMESPACE will be assigned to MY_NAMESPACE, meaning it will remain the same. JavaScript developers often call a value that can be coerced to true "truth-y", and values that can be coerced to false are sometimes called "false-y". 
 
-So if a value at the left side of a || operator is truth-y, it will [short-circuit the evaluation](http://en.wikipedia.org/wiki/Short-circuit_evaluation), so if SOMETHING is defined (that is, truth-y), (SOMETHING || {}) will return SOMETHING. Otherwise, (SOMETHING || {}) will return {}, that is, an empty JavaScript object to which we can start assigning functions and other properties.
+So if a value at the left side of a || operator is truth-y, it will [short-circuit the evaluation](http://en.wikipedia.org/wiki/Short-circuit_evaluation), so if MY_NAMESPACE is defined (that is, truth-y), (MY_NAMESPACE || {}) will return MY_NAMESPACE. Otherwise, (MY_NAMESPACE || {}) will return {}, that is, an empty JavaScript object to which we can start assigning functions and other properties.
 
 <h3>This and that and self and closures</h3>
 {% highlight javascript+django %}
