@@ -3,7 +3,7 @@ layout: post
 title: Javascript&#58; Lisp in C's Clothing
 description: Javascript leverages the power of a functional language
 ---
-Joe Marshall wrote an article titled ["Not Lisp again..."](http://funcall.blogspot.com/2009/03/not-lisp-again.html) where he demonstrated the power of Lisp by taking a calculus formula
+Joe Marshall wrote an article titled ["Not Lisp again..."](http://funcall.blogspot.com/2009/03/not-lisp-again.html) where he demonstrated the power of Lisp by taking the calculus formula defining a function's derivative:
 <pre>
                        f (x + dx) - f (x)
 D f(x) = f'(x) = lim  --------------------
