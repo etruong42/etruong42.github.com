@@ -37,12 +37,8 @@ div.body {
 }
 
 @media (max-width: 767px) {
-	div.content {
-		margin-left: 36px;
-	}
 
 	.sidebar-nav {
-		margin-left: 20px;
 		float: none;
 	}
 

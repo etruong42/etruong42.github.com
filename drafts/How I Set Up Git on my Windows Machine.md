@@ -1,5 +1,8 @@
-How I Set Up Git on my Windows Machine
-
+---
+layout: post
+title: How to Set Git Up on Windows
+description: Instructions on how to integrate git into a Windows environment
+---
 Get chocolatey: package manager for Windows. Like any other good package manager, it quickly installs popular tools and add to the environment in the command line without having to browse to different websites, downloading the installer, and executing it. 
 
 ==Install Dependencies==
@@ -19,7 +22,6 @@ install msysgit
 cinst git.install
 
 ==Setup SSH==
-
 
 run puttygen to create ssh rsa2 key
 
