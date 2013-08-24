@@ -3,37 +3,21 @@ layout: post
 title: How to Set Git Up on Windows
 description: Instructions on how to integrate git into a Windows environment
 ---
-Get chocolatey: package manager for Windows. Like any other good package manager, it quickly installs popular tools and add to the environment in the command line without having to browse to different websites, downloading the installer, and executing it. 
 
-==Install Dependencies==
+If you just want to get git on your Windows box that is integrated with the Windows environment (run git from a native windows terminal), you can run the following in your command prompt:
 
-For example, the way I install and run git for a new Windows install, I would
+@powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('http://ethantruong.net/install/installgit.ps1'))"
 
-install chocolatey
+In summary, this will install Chocolatey (a package manager for Windows), Git for Windows, and putty. The script will set the appropriate environment variables to properly integrate Git For Windows and use puTTY to facilitate the SSH connection to the git server. 
 
-@powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%systemdrive%\chocolatey\bin
+There are a few steps I did not manage to script away, such as 
 
-install putty:
+re-entering your passphrase when importing an openSSH private key to puTTY's format, 
 
-cinst putty
+saving the private key
 
-install msysgit
+uploading the public key to your server (example with github)
 
-cinst git.install
+adding your server's host key to puTTY's registry
 
-==Setup SSH==
-
-run puttygen to create ssh rsa2 key
-
-upload public key to your git server
-
-run ____ on the private key
-
-set GIT_SSH environment variable to the path of plink that was installed when you ran cinst putty.
-
-==Run git==
-
-You now have git running fully integrated into windows 
-
-close your terminal and re-open. running 
-
+calling putty's authentication agent with the newly created private key
