@@ -1,7 +1,3 @@
-Write-Host "This script should end by opening the puttygen window." -BackgroundColor "Green"
-Write-Host "Before closing that window, be sure to save your private key to the filesystem" -BackgroundColor "Green"
-Write-Host "and upload the public key in the puttygen window to your server's authorized_keys" -BackgroundColor "Green"
-
 if($Env:Path.ToLower().Contains("chocolatey")) {
 	"Chocolatey already installed; skipping installation"
 }
@@ -34,7 +30,7 @@ if(!(Test-Path $sshdir))
 }
 
 #tell git to use plink on putty
-[Environment]::SetEnvironmentVariable("GIT_SSH","$env:ChocolateyInstall\bin\PLINK.bat","User")
+[Environment]::SetEnvironmentVariable("GIT_SSH","$env:systemdrive\Chocolatey\bin\PLINK.bat","User")
 
 #generate openSSH key
 & $keygen -t rsa -f $sshloc
@@ -42,8 +38,16 @@ if(!(Test-Path $sshdir))
 #export openSSH key to putty key
 puttygen $sshloc -o $puttysshloc
 
-Write-Host "This script has completed. Please execute:" -BackgroundColor "Green"
+Write-Host "This script has ended and opened a puttygen window." -foregroundcolor "green"
+Write-Host "Before closing that window, be sure to save your private key to the filesystem" -foregroundcolor "green"
+Write-Host "and upload the public key in the puttygen window to your server's authorized_keys" -foregroundcolor "green"
+Write-Host "Once you have saved your private key, please execute:" -foregroundcolor "Green"
 Write-Host ""
-Write-Host "pageant xyz" -BackgroundColor "Yellow"
+Write-Host "pageant xyz" -foregroundcolor "Orange"
 Write-Host ""
-Write-Host "where xyz is the private key file you saved from the puttygen window" -BackgroundColor "Green"
+Write-Host "where xyz is the private key file you saved from the puttygen window" -foregroundcolor "Green"
+Write-Host ""
+Write-Host "Before connecting to any server, you must first add the server's host key to the registry" -foregroundcolor "green"
+Write-Host "You can do so by connecting via putty first, for example, trying to connect to github server, you first run" -foregroundcolor "green"
+Write-Host ""
+Write-Host "putty github.com" -foregroundcolor "Orange"
