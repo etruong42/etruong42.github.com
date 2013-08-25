@@ -19,5 +19,7 @@ saving the private key
 uploading the public key to your server (example with github)
 
 adding your server's host key to puTTY's registry
+C:\> putty yourgitserver.com
 
 calling putty's authentication agent with the newly created private key
+C:\> pageant path\to\your\privatekey.ppk
