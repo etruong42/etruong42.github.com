@@ -45,7 +45,7 @@ pageant C:\path\to\your\privatekey.ppk
 
 {% endhighlight %}
 
-Each time you restart your machine, you may need to restart the puTTY authentication agent. You can have pageant run on startup, loading your key, by running the PowerShell script below (be sure to replace C:\path\to\your\privatekey.ppk with the path to your private key file). You will still need to enter your passphrase on startup.
+Each time you restart your machine, you may need to restart the puTTY authentication agent. You can have pageant run and load your key, by running the PowerShell script below (be sure to replace C:\path\to\your\privatekey.ppk with the path to your private key file). You will still need to enter your passphrase on startup.
 
 {% highlight bat %}
 
@@ -55,6 +55,8 @@ $sc.arguments = "`"C:\path\to\your\privatekey.ppk`""
 $sc.save()
 
 {% endhighlight%}
+
+The above script was inspire by [this post](http://blog.shvetsov.com/2010/03/making-pageant-automatically-load-keys.html). I merely put it into PowerShell script form.
 
 <h3>Adding your server's host key to puTTY's registry</h3>
 
