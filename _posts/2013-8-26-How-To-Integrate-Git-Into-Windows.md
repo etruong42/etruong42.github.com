@@ -56,7 +56,7 @@ $sc.save()
 
 {% endhighlight%}
 
-The above script was inspire by [this post](http://blog.shvetsov.com/2010/03/making-pageant-automatically-load-keys.html). I merely put it into PowerShell script form.
+The above script was inspired by [this post](http://blog.shvetsov.com/2010/03/making-pageant-automatically-load-keys.html). I merely put it into PowerShell script form.
 
 <h3>Adding your server's host key to puTTY's registry</h3>
 
