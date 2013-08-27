@@ -37,7 +37,7 @@ You will also need to copy the public key in the first text area of the puttygen
 
 <h3>Start SSH authentication agent</h3>
 
-You then need to start putty's authentication agent with the newly created private key. Since I could not script saving the private key, I have no means to know where you saved it, but you can start the authentication agent with the following commnad in your prompt:
+You then need to start putty's authentication agent with the newly created private key. Since I could not script saving the private key, I have no means of knowing where you saved it, but you can start the authentication agent with the following commnad in your prompt:
 
 {% highlight bat %}
 
