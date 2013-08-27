@@ -18,7 +18,7 @@ The above command will download and execute the [script that you can look at on 
 
 <h3>How the script works</h3>
 
-The script installs Chocolatey (a package manager for Windows), Git for Windows, and puTTY. The script will set the appropriate environment variables to properly integrate Git For Windows and use puTTY to facilitate the SSH connection to the git server.
+The script installs [Chocolatey (a package manager for Windows)](http://chocolatey.org/), [Git for Windows](https://code.google.com/p/msysgit/), and [puTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) (chocolatey installs the other two components). The script will set the appropriate environment variables to properly integrate Git For Windows and use puTTY to facilitate the SSH connection to the git server.
 
 The following are a few steps I did not manage to script away.
 
