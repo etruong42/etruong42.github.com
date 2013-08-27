@@ -70,6 +70,4 @@ putty yourgitserver.com
 
 {% endhighlight %}
 
-<img src="/assets/img/add_server_host_key_to_registry.png" alt="Add server's host key to puTTY's registry" />
-
 You can now run git from native Windows terminals! 
