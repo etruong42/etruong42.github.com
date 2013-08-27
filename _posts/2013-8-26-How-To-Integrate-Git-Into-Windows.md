@@ -12,7 +12,7 @@ If you just want to get git on your Windows box that you can painlessly run from
 
 {% endhighlight %}
 
-The above command will download and execute the [script that you can look at on GitHub](https://github.com/etruong42/etruong42.github.com/blob/master/install/installgit.ps1). After running the script, follow the post-script instructions and you should be all ready to run git in native Windows consoles (my favorite is PowerShell). The script took me about 2 minutes to complete every step (i7 quad core, 8 GB RAM).
+The above command will download and execute the [script that you can look at on GitHub](https://github.com/etruong42/etruong42.github.com/blob/master/install/installgit.ps1). After running the script, follow the post-script instructions and you should be all ready to run git in native Windows consoles. The script took me about 2 minutes to complete every step (i7 quad core, 8 GB RAM).
 
 <img src="/assets/img/run_git_install_script.png" alt="Run git install script" />
 
@@ -45,6 +45,17 @@ pageant C:\path\to\your\privatekey.ppk
 
 {% endhighlight %}
 
+Each time you restart your machine, you may need to restart the puTTY authentication agent. You can have pageant run on startup, loading your key, by running the PowerShell script below (be sure to replace C:\path\to\your\privatekey.ppk with the path to your private key file). You will still need to enter your passphrase on startup.
+
+{% highlight bat %}
+
+$sc = $WshShell.CreateShortcut("$env:appdata\Microsoft\Windows\Start Menu\Programs\Startup\pageant.lnk")
+$sc.targetpath = "`"$env:systemdrive\Chocolatey\bin\PAGEANT.bat`""
+$sc.arguments = "`"C:\path\to\your\privatekey.ppk`""
+$sc.save()
+
+{% endhighlight%}
+
 <h3>Adding your server's host key to puTTY's registry</h3>
 
 Like any good SSH client, it keeps a list of fingerprints of servers you have connected to. If you try to connect to a new server that the SSH client has never connected to before, it will not connect unless you explicitly tell it that the server is legitimate lest someone tries to conduct a [MITM attack](http://en.wikipedia.org/wiki/Man-in-the-middle_attack) by spoofing your server.
@@ -59,13 +70,4 @@ putty yourgitserver.com
 
 <img src="/assets/img/add_server_host_key_to_registry.png" alt="Add server's host key to puTTY's registry" />
 
-You can now run git from native Windows terminals! Each time you restart, you may need to restart the puTTY authentication agent, or you can run the PowerShell script below (be sure to replace C:\path\to\your\privatekey.ppk with the path to your private key file). You will still need to enter your passphrase on startup.
-
-{% highlight bat %}
-
-$sc = $WshShell.CreateShortcut("$env:appdata\Microsoft\Windows\Start Menu\Programs\Startup\pageant.lnk")
-$sc.targetpath = "`"$env:systemdrive\Chocolatey\bin\PAGEANT.bat`""
-$sc.arguments = "`"C:\path\to\your\privatekey.ppk`""
-$sc.save()
-
-{% endhighlight%}
+You can now run git from native Windows terminals! 
