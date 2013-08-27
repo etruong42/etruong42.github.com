@@ -12,7 +12,7 @@ If you just want to get git on your Windows box that you can painlessly run from
 
 {% endhighlight %}
 
-The above command will download and execute the [script that you can look at on GitHub](https://github.com/etruong42/etruong42.github.com/blob/master/install/installgit.ps1). After running the script, follow the post-script instructions and you should be all ready to run git in native Windows console (my favorite is PowerShell). The script took me about 2 minutes to complete every step (i7 quad core, 8 GB RAM).
+The above command will download and execute the [script that you can look at on GitHub](https://github.com/etruong42/etruong42.github.com/blob/master/install/installgit.ps1). After running the script, follow the post-script instructions and you should be all ready to run git in native Windows consoles (my favorite is PowerShell). The script took me about 2 minutes to complete every step (i7 quad core, 8 GB RAM).
 
 <img src="/assets/img/run_git_install_script.png" alt="Run git install script" />
 
@@ -33,7 +33,7 @@ When importing an openSSH key to puTTY's format, puTTY opens its puttygen window
 
 <img src="/assets/img/save_private_key_to_filesystem.png" alt="Save private key to filesystem" />
 
-You will also need to copy the public key in the first text area of the puttygen dialog and past it into the git server. If you are trying to connect to GitHub, you can follow [their instructions](https://help.github.com/articles/generating-ssh-keys#step-3-add-your-ssh-key-to-github) of what to do once you have copied the public key to your clipboard.
+You will also need to copy the public key in the first text area of the puttygen dialog and paste it into the git server. If you are trying to connect to GitHub, you can follow [their instructions](https://help.github.com/articles/generating-ssh-keys#step-3-add-your-ssh-key-to-github) of what to do once you have copied the public key to your clipboard.
 
 <h3>Start SSH authentication agent</h3>
 
@@ -41,13 +41,13 @@ You then need to start putty's authentication agent with the newly created priva
 
 {% highlight bat %}
 
-pageant path\to\your\privatekey.ppk
+pageant C:\path\to\your\privatekey.ppk
 
 {% endhighlight %}
 
 <h3>Adding your server's host key to puTTY's registry</h3>
 
-Like any good SSH client, it keeps a list of fingerprints of servers you have connected to. If you try to connect to a new server that the SSH client has never connected to before, it will not connect unless you explicitly tell it that the server is legitimate lest someone is trying to conduct a [MITM attack](http://en.wikipedia.org/wiki/Man-in-the-middle_attack) by spoofing your server.
+Like any good SSH client, it keeps a list of fingerprints of servers you have connected to. If you try to connect to a new server that the SSH client has never connected to before, it will not connect unless you explicitly tell it that the server is legitimate lest someone tries to conduct a [MITM attack](http://en.wikipedia.org/wiki/Man-in-the-middle_attack) by spoofing your server.
 
 The easiest way to do so is to tell puTTY to open an SSH connection to the server using the command below, and confirm that you want to add the server to its registry.
 

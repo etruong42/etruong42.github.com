@@ -15,8 +15,8 @@ cinst git.install
 #tool to generate openSSH keys
 $keygen = ${Env:ProgramFiles(x86)} + "\git\bin\ssh-keygen"
 
-#setup directory to contain ssh keys
-$sshdir = $Env:UserProfile + "\.ssh"
+#set directory to contain ssh keys
+$sshdir = $Env:temp + "\ssh"
 
 #name of openSSH key
 $sshloc = $sshdir + "\gitkey"
@@ -36,6 +36,7 @@ if(!(Test-Path $sshdir))
 & $keygen -t rsa -f $sshloc
 
 #export openSSH key to putty key
+#this opens the puttygen dialog
 puttygen $sshloc -o $puttysshloc
 
 Write-Host "This script has ended and opened a puttygen window." -foregroundcolor "green"
@@ -43,9 +44,9 @@ Write-Host "Before closing that window, be sure to save your private key to the 
 Write-Host "and upload the public key in the puttygen window to your server's authorized_keys" -foregroundcolor "green"
 Write-Host "Once you have saved your private key, please execute:" -foregroundcolor "Green"
 Write-Host ""
-Write-Host "pageant xyz" -foregroundcolor "Yellow"
+Write-Host "pageant C:\path\to\your\privatekey.ppk" -foregroundcolor "Yellow"
 Write-Host ""
-Write-Host "where xyz is the private key file you saved from the puttygen window" -foregroundcolor "Green"
+Write-Host "where C:\path\to\your\privatekey.ppk is the path to the private key file you saved from the puttygen window" -foregroundcolor "Green"
 Write-Host ""
 Write-Host "Before connecting to any server, you must first add the server's host key to the registry" -foregroundcolor "green"
 Write-Host "You can do so by connecting via putty first, for example, trying to connect to github server, you first run" -foregroundcolor "green"
