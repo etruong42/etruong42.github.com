@@ -49,6 +49,7 @@ Each time you restart your machine, you may need to restart the puTTY authentica
 
 {% highlight bat %}
 
+$WshShell = New-Object -comObject WScript.Shell
 $sc = $WshShell.CreateShortcut("$env:appdata\Microsoft\Windows\Start Menu\Programs\Startup\pageant.lnk")
 $sc.targetpath = "`"$env:systemdrive\Chocolatey\bin\PAGEANT.bat`""
 $sc.arguments = "`"C:\path\to\your\privatekey.ppk`""
