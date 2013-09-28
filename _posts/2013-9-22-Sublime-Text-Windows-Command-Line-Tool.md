@@ -37,7 +37,7 @@ then add the Sublime Text program files folder to the PATH environment variable
 
 {% highlight bat %}
 
-PS C:\Users\Ethan> [Environment]::SetEnvironmentVariable("Path", "$Env:Path;C:\Program Files\Sublime Text 2\", "User")
+PS C:\Users\Ethan> [Environment]::SetEnvironmentVariable("Path", "$Env:Path;$env:programw6432\Sublime Text 2\", "User")
 
 {% endhighlight %}
 
