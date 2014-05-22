@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Net Neutrality and Your ISP
+title: Net Neutrality, the FCC, and Your ISP
 description: or why dismantling net neutrality will make your deplorable internet service worse
 ---
 
