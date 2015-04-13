@@ -4,7 +4,7 @@ title: How to Integrate Git Into Windows
 description: Run a couple of commands to get git seamlessly running on native Windows consoles
 ---
 
-If you just want to get git on your Windows box that you can painlessly run from native Windows terminals, you can run the following in your command prompt:
+If you just want to get git on your Windows box that you can painlessly run from native Windows terminals, you can run the following in your command prompt as Administrator:
 
 {% highlight bat %}
 
