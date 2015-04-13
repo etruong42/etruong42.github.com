@@ -30,7 +30,7 @@ if(!(Test-Path $sshdir))
 }
 
 #tell git to use plink on putty
-[Environment]::SetEnvironmentVariable("GIT_SSH","$env:systemdrive\Chocolatey\bin\PLINK.bat","User")
+[Environment]::SetEnvironmentVariable("GIT_SSH","$env:ChocolateyInstall\bin\PLINK.bat","User")
 
 #generate openSSH key
 & $keygen -t rsa -f $sshloc
