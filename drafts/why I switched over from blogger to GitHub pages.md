@@ -1,1 +1,0 @@
-why I switched over from blogger to GitHub pages
