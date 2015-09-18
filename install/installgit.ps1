@@ -13,7 +13,7 @@ cinst putty
 cinst git.install
 
 #tool to generate openSSH keys
-$keygen = ${Env:ProgramFiles(x86)} + "\git\bin\ssh-keygen"
+$keygen = ${Env:ProgramFiles} + "\git\bin\ssh-keygen"
 
 #set directory to contain ssh keys
 $sshdir = $Env:temp + "\ssh"
