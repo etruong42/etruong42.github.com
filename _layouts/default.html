@@ -3,7 +3,11 @@
 <head>
 	<title>{% if page.title %} {{ page.title }} | {% endif %} Ethan's mish-mash</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="A bunch of musings">
+	{% if page.description %}
+		<meta name="description" content="{{ page.description }}">		
+	{% else %}
+		<meta name="description" content="A bunch of musings">
+	{% endif %}
 	<meta name="author" content="Ethan Truong">
 	<link href="/assets/css/bootstrap.css" rel="stylesheet">
 	<link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
