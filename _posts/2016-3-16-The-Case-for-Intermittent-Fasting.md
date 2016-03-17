@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Case for Intermittent Fasting
+title: Why I Fast (Intermittently)
 description: For the generally healthy, experimenting with nutrition and eating less shouldn't be scary. Try it, and unlock new potential.
 ---
 
