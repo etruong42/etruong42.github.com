@@ -18,7 +18,7 @@ If you can code up a binary search, and if you are (still) looking for an auto-d
 
  - [MIT](https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb) - The amazing lectures I wish I had when I went into Computer Science.
 
- - [Stanford](https://www.coursera.org/learn/algorithms-part1) - Excellent at posing interesting, simple problems and then building up the complexity.
+ - [Stanford](https://www.coursera.org/learn/algorithms-part1) - Poses simple, fascinating problems and builds up the complexity. Keeps the material fresh and interesting with real-world applications.
 
  - [Princeton](https://www.coursera.org/specializations/algorithms) - Very rigorous explanations which are a little hard to follow. Save this one for last (if you do all three, which I recommend).
 
@@ -41,7 +41,7 @@ Interviews involve convincing the interviewer of your expertise of the subject m
 
 ## Practice:
 
-My bread and butter of practice problems and explanations were [LeetCode](https://leetcode.com/) and [CodeFights](https://codesignal.com/) (now called CodeSignal). I would often find myself encountering a problem that I do not understand, and read the provided solution. I would eventually come across lectures that covered the techniques used in the solution,  such as dynamic programming, and I would be able to focus on the lecture and use the lecture material to prepare my explanation for how I would solve the problem. Solving a previously unsolvable problem is extremely gratifying.
+My bread and butter of practice problems and explanations were [LeetCode](https://leetcode.com/) and [CodeFights](https://codesignal.com/) (now called CodeSignal). I would often find myself encountering a problem that I do not understand, and read the provided solution. I would eventually come across lectures that covered the techniques used in the solution, such as dynamic programming, and I would be able to focus on the lecture and use the lecture material to prepare my explanation for how I would solve the problem. Solving a previously unsolvable problem is extremely gratifying.
 
 ## Emulate:
 
@@ -55,7 +55,7 @@ This post focused on algorithms and data structures, specifically to succeed in 
 
  - **Apply the new lessons** (solve a problem that requires the new material, re-derive the conclusions of the new material, successfully teach the material to someone else).
 
- - **Learn from others** who are applying the skills you are trying to learn.
+ - **Learn from others** who are demonstrating the skills you are trying to learn.
 
 [^1]: http://qr.ae/TUpbZ7 - *I am a B.Tech computer science student. I've heard that data structures and algorithms are very important and are asked in every interview, but I have no interest in that topic. What other options do I have?*
 [^2]: http://qr.ae/TU8cYb - *“algorithms” and “data structures” are ways of giving you something to do when you don’t know how to do anything. Algorithms are for n00bs. (700 upvotes)*
