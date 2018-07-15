@@ -4,7 +4,7 @@ title: My Art to Studying (Algorithms and Data Structures)
 description: I never really "got" algorithms until I figured out an effective approach to learning it.
 ---
 
-I finally did it. I secured a software engineering position at Google. I put my nose to the grindstone for several months to make myself hirable. While I am quite happy with how my life turned out, I am going to write the post I wish I could have read in college: the post that may have put me on a path to one of the "top-tier" software employers much sooner\*\*.
+I finally did it. I secured a software engineering position at Google. I put my nose to the grindstone for several months to make myself hirable. While I am quite happy with how my life turned out, this is the post I wish I could have read in college: the post that may have put me on a path to one of the "top-tier" software employers much sooner\*\*.
 
 First, make sure that you are in the right mindset. There is a lot of negativity out there when it comes to algorithms in the tech interview[^1] [^2] [^3] [^4] [^5]. Ignore the haters; embrace algorithmic thinking.
 
