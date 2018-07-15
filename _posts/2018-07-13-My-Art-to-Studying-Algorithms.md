@@ -58,7 +58,7 @@ This post focused on algorithms and data structures, specifically to succeed in 
  - **Learn from others** who are demonstrating the skills you are trying to learn.
 
 [^1]: http://qr.ae/TUpbZ7 - *I am a B.Tech computer science student. I've heard that data structures and algorithms are very important and are asked in every interview, but I have no interest in that topic. What other options do I have?*
-[^2]: http://qr.ae/TU8cYb - *“algorithms” and “data structures” are ways of giving you something to do when you don’t know how to do anything. Algorithms are for n00bs. (700 upvotes)*
-[^3]: https://www.quora.com/Why-do-most-software-developers-suck-at-algorithm-type-interview-questions/answer/Moray-Taylor?srid=i5hi - *those algo questions are only vaguely related to the actual job. If you think professional programming is about solving algorithm puzzles, you are in for a rude awakening. (2k upvotes)*
-[^4]: https://www.quora.com/What-are-the-common-misconceptions-that-aspiring-programmers-have/answer/Moray-Taylor?srid=dfs - *Programming is about algorithms? [No,] programming is about building solutions, that’s it.*
+[^2]: http://qr.ae/TU8cYb - *“algorithms” and “data structures” are ways of giving you something to do when you don’t know how to do anything. Algorithms are for n00bs.* (700 upvotes)
+[^3]: https://www.quora.com/Why-do-most-software-developers-suck-at-algorithm-type-interview-questions/answer/Moray-Taylor?srid=i5hi - *those algo questions are only vaguely related to the actual job. If you think professional programming is about solving algorithm puzzles, you are in for a rude awakening.* (2k upvotes)
+[^4]: https://www.quora.com/What-are-the-common-misconceptions-that-aspiring-programmers-have/answer/Moray-Taylor?srid=dfs - *Programming is about algorithms? [No,] programming is about building solutions, that’s it.* (1.7k upvotes)
 [^5]: https://www.quora.com/Why-is-Introduction-to-Algorithms-a-must-read-for-becoming-a-better-programmer/answer/John-Byrd-2?srid=i5hi - This was an answer extremely critical of learning algorithms that has since unfortunately been deleted
