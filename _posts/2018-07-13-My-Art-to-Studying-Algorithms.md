@@ -6,7 +6,7 @@ description: I never really "got" algorithms until I figured out an effective ap
 
 I finally did it. I secured a software engineering position at Google. I put my nose to the grindstone for several months to make myself hirable. While I am quite happy with how my life turned out, I am going to write the post I wish I could have read in college: the post that may have put me on a path to one of the "top-tier" software employers much sooner\*\*.
 
-First, make sure that you are in the right mindset. There is a lot of negativity out there when it comes to algorithms in the tech interview[^1][^2][^3][^4][^5]. Ignore the haters; embrace algorithmic thinking.
+First, make sure that you are in the right mindset. There is a lot of negativity out there when it comes to algorithms in the tech interview[^1] [^2] [^3] [^4] [^5]. Ignore the haters; embrace algorithmic thinking.
 
 Now master it. There are resources I did not/could not utilize 8 years ago. Now, there are so many resources available, just picking a starting point can be daunting: MOOCs, blog posts, books, talks, lectures, etc etc etc.
 
@@ -59,6 +59,6 @@ This post focused on algorithms and data structures, specifically to succeed in 
 
 [^1]: http://qr.ae/TUpbZ7 - *I am a B.Tech computer science student. I've heard that data structures and algorithms are very important and are asked in every interview, but I have no interest in that topic. What other options do I have?*
 [^2]: http://qr.ae/TU8cYb - *“algorithms” and “data structures” are ways of giving you something to do when you don’t know how to do anything. Algorithms are for n00bs. (700 upvotes)*
-[^3]: https://www.quora.com/Why-do-most-software-developers-suck-at-algorithm-type-interview-questions/answer/Moray-Taylor?srid=i5hi - *I’m exaggerating, but the point is, as a Professional Software Developer, those algo questions are only vaguely related to the actual job. If you think professional programming is about solving algorithm puzzles, you are in for a rude awakening. (2k upvotes)*
+[^3]: https://www.quora.com/Why-do-most-software-developers-suck-at-algorithm-type-interview-questions/answer/Moray-Taylor?srid=i5hi - *those algo questions are only vaguely related to the actual job. If you think professional programming is about solving algorithm puzzles, you are in for a rude awakening. (2k upvotes)*
 [^4]: https://www.quora.com/What-are-the-common-misconceptions-that-aspiring-programmers-have/answer/Moray-Taylor?srid=dfs - *Programming is about algorithms? [No,] programming is about building solutions, that’s it.*
 [^5]: https://www.quora.com/Why-is-Introduction-to-Algorithms-a-must-read-for-becoming-a-better-programmer/answer/John-Byrd-2?srid=i5hi - This was an answer extremely critical of learning algorithms that has since unfortunately been deleted
