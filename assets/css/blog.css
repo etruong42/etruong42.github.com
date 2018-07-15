@@ -51,7 +51,17 @@ article.post {
 }
 
 div.content p {
-	margin: 12px 0 12px 0;
+  margin: 6px 0 24px 0;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+div.content li p {
+  margin: 5px;
+}
+
+div.content ul {
+  margin-bottom: 16px;
 }
 
 .image-wrapper {
