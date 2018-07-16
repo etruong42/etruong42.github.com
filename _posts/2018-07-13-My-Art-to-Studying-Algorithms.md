@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My Art to Studying (Algorithms and Data Structures)
-description: I never really "got" algorithms until I figured out an effective approach to learning it.
+description: I never really &quot;got&quot; algorithms until I figured out an effective approach to learning it.
 ---
 
 I finally did it. I secured a software engineering position at Google. I put my nose to the grindstone for several months to make myself hirable. While I am quite happy with how my life turned out, this is the post I wish I could have read in college: the post that may have put me on a path to one of the "top-tier" software employers much sooner.
