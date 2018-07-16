@@ -6,11 +6,13 @@ description: I never really &quot;got&quot; algorithms until I figured out an ef
 
 I finally did it. I secured a software engineering position at Google. I put my nose to the grindstone for several months to make myself hirable. While I am quite happy with how my life turned out, this is the post I wish I could have read in college: the post that may have put me on a path to one of the "top-tier" software employers much sooner.
 
-First, make sure that you are in the right mindset. There is a lot of negativity out there when it comes to algorithms in the tech interview[^1] [^2] [^3] [^4] [^5]. Ignore the haters; embrace algorithmic thinking.
+First, make sure that you are in the right mindset. There is a lot of negativity out there when it comes to algorithms in the tech interview[^1] [^2] [^3] [^4] [^5]. I, too, learned to hate algorithms from reading Hacker News while I was an impressionable college student. It was also convenient for me to adopt this hate as I got to feel better about my deficiency in algorithmic thinking and understanding. Now, I have learned to appreciate the beauty and elegance of algorithms. It helps that the jobs I now qualify for have a higher pay band.
 
-Now master it. There are resources I did not/could not utilize 8 years ago. Now, there are so many resources available, just picking a starting point can be daunting: MOOCs, blog posts, books, talks, lectures, etc etc etc.
+Ignore the haters; embrace algorithmic thinking.
 
-If you can code up a binary search, and if you are (still) looking for an auto-didactic path to algorithmic and data structural greatness, this post may be helpful to you.
+There are resources I did not/could not utilize 8 years ago. Now, there are so many resources available, just picking a starting point can be daunting: MOOCs, blog posts, books, talks, lectures, etc etc etc.
+
+If you can code up a binary search, and if you are (still) looking for an auto-didactic path to algorithmic and data structural greatness, this post may be helpful to you. Even if I were in school today, I would adopt these strategies on top of my course load.
 
 *tl;dr* Read Cracking the Coding Interview. Watch lectures. Practice. Read and emulate great coders and their code.
 
@@ -55,7 +57,7 @@ This post focused on algorithms and data structures, specifically to succeed in 
 
  - **Find convenient media to consume lessons** - YouTube has been a fantastic source of college lectures and other educational videos like Khan Academy.
 
- - **Apply the new lessons** (solve a problem that requires the new material, re-derive the conclusions of the new material, successfully teach the material to someone else).
+ - **Apply the new lessons** - Solve a problem that requires the new material, re-derive the conclusions of the new material, successfully teach the material to someone else, etc.
 
  - **Learn from others** who are demonstrating the skills you are trying to learn.
 
