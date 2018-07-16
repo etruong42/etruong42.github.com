@@ -51,6 +51,8 @@ Perhaps the best way to learn to write elegant code is to read elegant code. The
 
 This post focused on algorithms and data structures, specifically to succeed in coding interviews. This is only a tiny portion of computer engineering. I transfer a lot of these techniques to how I study practically any other subject:
 
+ - **Adopt the right mindset** by finding motivation that is intrinsic to material you are trying to learn.
+
  - **Find convenient media to consume lessons** - YouTube has been a fantastic source of college lectures and other educational videos like Khan Academy.
 
  - **Apply the new lessons** (solve a problem that requires the new material, re-derive the conclusions of the new material, successfully teach the material to someone else).
