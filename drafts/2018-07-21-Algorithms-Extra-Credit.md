@@ -5,19 +5,22 @@ description: Some gems that taught me the beauty of algorithms
 ---
 
 I previously [wrote about how I studied algorithms to pass Google's
-interviews](https://ethantruong.net/My-Art-to-Studying-Algorithms.html), and
-while I wrote about my core approach which I have found very effective and think
-is underrated given I have never heard anyone doing it, I left out what I think are some of the
-most underrated resources.
+interviews](https://ethantruong.net/My-Art-to-Studying-Algorithms.html) where I
+discussed watching university lectures.  while I wrote about my core approach
+which I have found very effective and think is underrated given I have never
+heard anyone doing it, I left out what I think are some of the most underrated
+resources.
 
 All of the courses I labeled were the "introductory" material, and there are
 more advanced courses taught at each of collegiate institutions, usually the
 same lecturer, so you can follow up if any of them had a style that is
 complementary to your learning style.
 
-MIT
-Stanford
-Princeton
+ - MIT
+
+ - Stanford
+
+ - Princeton
 
 There are some people who took me a little further down the rabbit hole and left
 me a little more in awe of how little I can grasp the depth of this topic.
