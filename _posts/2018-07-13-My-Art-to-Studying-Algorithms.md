@@ -45,7 +45,7 @@ My bread and butter of practice problems and explanations were [LeetCode](https:
 
 ## Emulate:
 
-Perhaps the best way to learn to write elegant code is to read elegant code. There are many examples of elegant code, but the two collections that taught me the most was [Norvig's pytudes](https://github.com/norvig/pytudes) and [Laaksonen's Competitive Programmer’s Handbook](https://cses.fi/book/book.pdf).
+Perhaps the best way to learn to write elegant code is to read elegant code. There are many examples of elegant code, but the two collections that taught me the most were [Norvig's pytudes](https://github.com/norvig/pytudes) and [Laaksonen's Competitive Programmer’s Handbook](https://cses.fi/book/book.pdf).
 
 ## Postscript:
 
